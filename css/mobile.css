@@ -1,0 +1,67 @@
+/* pc */
+
+body {
+	background: #ccc;
+}
+
+.container {
+	max-block-size: 1200px;
+	margin: 0 auto;
+	display: flex;
+	outline: 1px solid red;
+	position: relative;
+}
+
+header {
+	height: 80px;
+	background: #333;
+}
+
+header nav a {
+	color: #fff;
+}
+
+/* pc에서는 toggle 없음 */
+#toggle {
+	display: block;
+	background: transparent;
+	color: #fff;
+	border: none;
+	font-size: 32px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+header .container {
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+header nav a {
+	margin-left: 25px;
+	margin-right: 25px;
+	font-size: 18px;
+}
+
+/* 모바일 네비 */
+header nav {
+	background: #c4c4c4;
+	position: absolute;
+	left: 0;
+	top: 80px;
+	width: 100%;
+	padding: 20px 0;
+	display: none;
+}
+
+header nav.on {
+	
+}
+
+header nav a {
+	display: block;
+	color: #333;
+	margin-bottom: 10px;
+}
